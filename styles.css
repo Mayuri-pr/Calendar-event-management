@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Default styles */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fde2e2ed;
+}
+#calendar {
+  border-radius: 7px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: lightblue;
+  border: solid #000;
+}
+
+.fc th,
+.fc td {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0;
+  vertical-align: top;
+}
+
+.fc-day {
+  border: 1px solid #000; /* Add border to date boxes */
+}
+
+.fc-button {
+  background-color: rgb(170, 168, 168);
+  color: black;
+  font-weight: bold;
+}
+
+.fc-button:hover {
+  background-color: #b8acb8;
+  /* border: black 2px; */
+}
+
+.fc-header {
+  background-color: #f0f0f0;
+  border: black 2px;
+}
+
+.fc-header-title h2 {
+  color: #337ab7;
+}
+
+.fc-day-grid-event {
+  background-color: #5cb85c;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.fc-day-grid-event:hover {
+  background-color: #4cae4c;
+}
+
+.fc-time-grid-event {
+  background-color: #5bc0de;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.fc-toolbar.fc-header-toolbar {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.fc-time-grid-event:hover {
+  background-color: #46b8da;
+}
+
+body .fc {
+  font-size: 1.1em;
+}
+
+.fc-title {
+  font-family: sans-serif;
+  color: #f9f7f7;
+}
+
+.fc-time {
+  color: #831616;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  #calendar {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #calendar {
+    max-width: 100%;
+  }
+}
